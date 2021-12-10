@@ -5,7 +5,7 @@ import urllib.parse
 import hmac
 import base64
 from json import JSONDecodeError
-import pykrakenapi
+from pykrakenapi import KrakenAPI
 import krakenex
 import plotly.express as px
 import plotly.graph_objects as go
