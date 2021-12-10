@@ -16,12 +16,13 @@ import random
 
 
 class choice:
-    #Variables
+
+#Variables
     def __init__(self, time_span=None,coin_choice=None):
         self.time_span=time_span
         self.coin_choice=coin_choice
 
-#methods
+#Methods
 def get_span(span):
         
     if span=='day':
@@ -114,7 +115,7 @@ def load_data():
 
         dfx=pd.DataFrame(coin_trans, columns=['value_fiat_currency', 'volume_ecoin','timestamp','buy_sell','limit_market','misc'])
         dfx['date'] = dfx['timestamp'].map(datetime.fromtimestamp)
- #       dfx['vwap'] = (int(dfx.volume_ecoin)*float(df.value_fiat_currency.max())+float(df.value_fiat_currency.min()))/2).cumsum() / float(df.volume_ecoin).cumsum())
+ #      dfx['vwap'] = (int(dfx.volume_ecoin)*float(df.value_fiat_currency.max())+float(df.value_fiat_currency.min()))/2).cumsum() / float(df.volume_ecoin).cumsum())
 
 
 
